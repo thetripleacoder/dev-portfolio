@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="My portfolio app created with React" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <!-- Import Libraries -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+    <!-- Import Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Cutive+Mono&family=Delicious+Handrawn&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <title>AAA</title>
+  </head>
+  <body>
+    <form name="test" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+      window.formbutton =
+        window.formbutton ||
+        function () {
+          (formbutton.q = formbutton.q || []).push(arguments);
+        };
+      formbutton('create', {
+        title: 'Send me an email!',
+        description: null,
+        action: 'https://formspree.io/f/xrgvyqjb',
+        fields: [
+          {
+            name: 'name',
+            type: 'text',
+            label: 'Your Name',
+            required: true,
+          },
+          {
+            name: 'email',
+            type: 'email',
+            label: 'Your Email',
+            required: true,
+          },
+          {
+            name: 'Message',
+            type: 'textarea',
+          },
+          {
+            type: 'submit',
+          },
+        ],
+        theme: 'classic',
+        buttonImg: "<i class='fas fa-comment' style='font-size:24px'/>",
+        styles: {
+          fontFamily: '"Lato", sans-serif',
+          button: {
+            background: '#2E2E2E',
+          },
+          modal: {},
+          title: {
+            background: '#2E2E2E',
+            letterSpacing: '0.05em',
+            textTransform: 'uppercase',
+          },
+          description: {},
+          body: {},
+          formStatus: {
+            fontSize: '20px',
+          },
+        },
+        onResponse: function (ok, setStatus) {
+          if (ok) {
+            setStatus(
+              "Your request was received! Thank you for your interest in reaching out to me. I'll get back to you as soon as possible."
+            );
+          } else {
+            setStatus(
+              "<span style='color:red'>There was a problem. We've been notified.</span>"
+            );
+          }
+        },
+        // initiallyVisible: true,
+      });
+    </script>
+  </body>
+</html>
