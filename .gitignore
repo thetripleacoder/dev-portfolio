@@ -3,3 +3,4 @@ netlify.toml
 yarn.lock
 index.css.map
 index.scss
+.DS_Store
