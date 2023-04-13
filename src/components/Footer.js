@@ -13,6 +13,7 @@ export default function Footer() {
             href='https://www.linkedin.com/in/aldous-aldwin-alde/'
             role='button'
             target='_blank'
+            rel='noopener noreferrer'
           >
             <i className='fab fa-linkedin-in'></i>
           </a>
@@ -21,6 +22,7 @@ export default function Footer() {
             href='https://github.com/thetripleacoder'
             role='button'
             target='_blank'
+            rel='noopener noreferrer'
           >
             <i className='fab fa-github'></i>
           </a>
@@ -29,6 +31,7 @@ export default function Footer() {
             href='mailto:alde.aldous@gmail.com'
             role='button'
             target='_blank'
+            rel='noopener noreferrer'
           >
             <i className='far fa-envelope'></i>
           </a>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { skills } from '../data';
 
 let frontendList = [];
@@ -25,7 +25,7 @@ function SkillSection({ title, listIcon }) {
             <div className='card-container'>
               <div className='icon-card'>
                 <div className='front'>
-                  <img className='front-img' src={icon.logo} />
+                  <img className='front-img' src={icon.logo} alt={icon.name}/>
                 </div>
                 <div className='back'>
                   <p>{icon.name}</p>

@@ -2,7 +2,6 @@ import React, { Fragment, useEffect } from 'react';
 import Jumbotron from '../components/Jumbotron';
 import About from '../sections/About';
 import Projects from '../sections/Projects';
-import Contact from './Contact';
 
 export default function Home(props) {
   let activeTab = props.location.activeTab;
@@ -37,7 +36,6 @@ export default function Home(props) {
 
   function navigateTabSection(id) {
     const element = document.getElementById(id);
-    // console.log(id)
     if (element) {
       element.scrollIntoView();
     }

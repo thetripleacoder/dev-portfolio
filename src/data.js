@@ -14,7 +14,7 @@ export const projects = [
     tools: 'HTML, CSS + Bootstrap',
     description: `Personal Developer Portfolio project version 1`,
     dateCreated: '2021',
-    image: './assets/images/projects/dev-portfolio-v1.jpg',
+    image: './assets/images/projects/dev-portfolio-v1-2.jpg',
     gif: '',
     link: 'https://thetripleacoder.vercel.app/',
     featured: false,

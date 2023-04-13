@@ -26,9 +26,6 @@ export default function Projects() {
       (otherWorksToShow + 4) < others.length
         ? 4
         : (otherWorksToShow + (others.length - otherWorksToShow));
-        // console.log(additionalotherWorksToShow)
-        // console.log(otherWorksToShow)
-        // console.log(others.length)
     setOtherWorksToShow(additionalotherWorksToShow);
     setIsPastProjectsExpanded(true);
   }
@@ -55,7 +52,7 @@ export default function Projects() {
                 className='hidden-el grid md:grid-cols-2 border-2'
               >
                 <div>
-                  <a href={project.link} target='_blank'>
+                  <a href={project.link} target='_blank' rel='noopener noreferrer'>
                     <div className='featured-card-image h-full'>
                       <img
                         alt={project.title}

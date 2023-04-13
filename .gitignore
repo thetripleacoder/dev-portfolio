@@ -1,3 +1,5 @@
 node_modules
 netlify.toml
 yarn.lock
+index.css.map
+index.scss

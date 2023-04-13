@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Skills from './Skills';
 
 export default function About() {
@@ -13,6 +13,7 @@ export default function About() {
             <img
               src='../assets/images/miscellaneous/logo.png'
               className='about-profile-img rounded-full'
+              alt='logo'
             ></img>
           </div>
 

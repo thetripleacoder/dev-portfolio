@@ -18,33 +18,33 @@ export default function Navbar() {
     },
     {
       name: 'Contact',
-      href: 'contact',
+      href: 'footer',
     },
   ];
-  const [previousTab, setPreviousTab] = useState('');
   const [activeTab, setActiveTab] = useState('');
-  const [isRouteTriggered, setIsRouteTriggered] = useState(false);
-  const [isScrollingIntoView, setIsScrollingIntoView] = useState(false);
+  // const [isRouteTriggered, setIsRouteTriggered] = useState(false);
 
   useEffect(() => {
-    observePageSection();
+    // observePageSection();
     listenScrollBehavior();
-  }, [isRouteTriggered]);
+  }, []);
+  // }, [isRouteTriggered]); - useEffect logic runs if routing changes
 
-  function observePageSection() {
-    const options = {
-      threshold: 0.3,
-    };
-    let pageObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveTab(entry.target.id);
-        }
-      });
-    }, options);
-    const pages = document.querySelectorAll('.section');
-    pages.forEach((el) => pageObserver.observe(el));
-  }
+  // Remove observer to set styling to active class when visible in view
+  // function observePageSection() {
+  //   const options = {
+  //     threshold: 0.3,
+  //   };
+  //   let pageObserver = new IntersectionObserver((entries) => {
+  //     entries.forEach((entry) => {
+  //       if (entry.isIntersecting) {
+  //         setActiveTab(entry.target.id);
+  //       }
+  //     });
+  //   }, options);
+  //   const pages = document.querySelectorAll('.section');
+  //   pages.forEach((el) => pageObserver.observe(el));
+  // }
 
   function listenScrollBehavior() {
     let navBar = document.getElementById('navbar');
@@ -58,22 +58,16 @@ export default function Navbar() {
       let formButton = document.getElementById('formbutton-button');
       let formIframe = document.getElementById('formbutton-iframe');
       var totalPageHeight = document.body.scrollHeight;
-
       // @var int scrollPoint
       var scrollPoint = window.scrollY + window.innerHeight;
-
       // check if we hit the bottom of the page
-      if (scrollPoint >= totalPageHeight && formIframe) {
+      if (scrollPoint >= totalPageHeight) {
         setActiveTab('contact');
-        console.log('at the bottom');
-        console.log(formButton.style);
-        console.log(formIframe.style.opacity)
-        if (formIframe.style.opacity == 0) {
-
+        if (parseInt(formIframe.style.opacity, 0) === 0) {
           formButton.click();
         }
       } else {
-        observePageSection();
+        // observePageSection();
       }
     });
     return () => {
@@ -84,13 +78,21 @@ export default function Navbar() {
   function navigateTabSection(id) {
     // pageObserver.disconnect()
     // if (activeTab === '/contact' && activeTab !== id) {
-    //   console.log('route triggered');
     //   setIsRouteTriggered(!isRouteTriggered);
     // } else {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      // }
+    const sectionEl = document.getElementById(id);
+    if (sectionEl) {
+      if (id === 'contact') {
+        let formButton = document.getElementById('formbutton-button');
+        let formIframe = document.getElementById('formbutton-iframe');
+        if (formButton) {
+          if (parseInt(formIframe.style.opacity, 0) === 0) {
+            formButton.click();
+          }
+        }
+      } else {
+        sectionEl.scrollIntoView({ behavior: 'smooth' });
+      }
     }
     setActiveTab(id);
   }
