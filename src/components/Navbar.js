@@ -99,7 +99,7 @@ export default function Navbar() {
 
   return (
     <nav className='navbar navbar-expand-lg navbar-light' id='navbar'>
-      <a className='navbar-brand' href='/'>
+      <a className='navbar-brand d-md-none' href='/'>
         AAA
       </a>
       <button
