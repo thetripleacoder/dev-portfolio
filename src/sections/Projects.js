@@ -43,13 +43,13 @@ export default function Projects() {
         <h1 className='font-bold underline'>Projects</h1>
       </div> */}
       <div className='bg-white'>
-        <div className='mt-10'>
+        <div className='mt-10 mb-20'>
           <h1 className='underline'>Featured Works</h1>
           <div className='mt-10 container p-4 d-flex flex-wrap justify-content-center'>
             {featured.map((project) => (
               <div
                 key={project.title}
-                className='hidden-el grid md:grid-cols-2 border-2'
+                className='hidden-el grid md:grid-cols-2'
               >
                 <div>
                   <a href={project.link} target='_blank' rel='noopener noreferrer'>
@@ -69,14 +69,13 @@ export default function Projects() {
                   </a>
                 </div>
                 <div className='featured-card-info p-4 flex overflow-y-auto'>
-
                 <ProjectInfo project={project} />
                 </div>
               </div>
             ))}
           </div>
         </div>
-        <div className='mt-10 text-center'>
+        <div className='mt-20 text-center'>
           <p className='text-2xl'>More works</p>
           <div className='mt-10 container grid gap-10 md:grid-cols-2 md:gap-10'>
             {others.slice(0, otherWorksToShow).map((project, index) => (
