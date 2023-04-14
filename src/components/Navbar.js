@@ -98,9 +98,12 @@ export default function Navbar() {
   }
 
   return (
-    <nav className='container-fluid navbar navbar-expand-lg' id='navbar'>
+    <nav className='navbar navbar-expand-lg navbar-light' id='navbar'>
+      <a className='navbar-brand' href='/'>
+        AAA
+      </a>
       <button
-        className='navbar-toggler justify-content-center order-2'
+        className='navbar-toggler'
         type='button'
         data-toggle='collapse'
         data-target='#navbarNav'
@@ -110,12 +113,8 @@ export default function Navbar() {
       >
         <span className='navbar-toggler-icon'></span>
       </button>
-
-      <div
-        className='collapse navbar-collapse justify-content-center'
-        id='navbarNav'
-      >
-        <ul className='navbar-nav'>
+      <div className='collapse navbar-collapse' id='navbarNav'>
+        <ul className='navbar-nav flex justify-center w-full'>
           {tabsArr.map((tab) => (
             <li key={tab.name} className='nav-item'>
               {/* {tab.name === 'Contact' ? (
