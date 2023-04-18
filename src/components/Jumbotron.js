@@ -74,10 +74,10 @@ export default function Jumbotron() {
 
   return (
     <div
-      className='section jumbotron jumbotron-fluid d-flex vh-100 flex flex-col justify-center items-center'
+      className='section jumbotron jumbotron-fluid d-flex flex flex-col justify-center items-center'
       id='jumbotron'
     >
-      <h1 className='text-4xl md:text-9xl text-center'>
+      <h1 className='text-4xl md:text-8xl text-center'>
         Aldous Aldwin Alde
       </h1>
       <h3
