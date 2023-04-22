@@ -15,7 +15,7 @@ export default function Footer() {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <i className='fab fa-linkedin-in'></i>
+            <i className='fab fa-linkedin-in pt-1'></i>
           </a>
           <a
             className='btn btn-outline-secondary rounded-circle contact-link-button'
@@ -24,7 +24,7 @@ export default function Footer() {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <i className='fab fa-github'></i>
+            <i className='fab fa-github pt-1'></i>
           </a>
           <a
             className='btn btn-outline-secondary rounded-circle contact-link-button'
@@ -33,7 +33,7 @@ export default function Footer() {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <i className='far fa-envelope'></i>
+            <i className='far fa-envelope pt-1'></i>
           </a>
         </div>
         <div className='row justify-content-center text-center mb-0 pb-4'>
