@@ -1,8 +1,22 @@
 export const projects = [
   {
+    title: 'watodo',
+    logo: './assets/images/projects/watodo-logo.png',
+    tools: 'MEAN Stack',
+    description: `watodo, which sounds like "What to do", is a to-do list app that lets users add, edit, complete and delete tasks. Tasks can be listed as important or on top of a list and can also be grouped into different categories. It is a full-stack application that supports user registration and login, which enable users to retrieve saved lists. The whole application can be used in dark mode feature.`,
+    idea: 'Microsoft To Do',
+    dateCreated: '2023',
+    image: './assets/images/projects/watodo-tasks-window-2.jpg',
+    gif: './assets/gifs/watodo.gif',
+    link: 'https://watodo-client.vercel.app/',
+    featured: true,
+  },
+  {
     title: 'MyStore',
+    logo: './assets/images/projects/capstone-3-logo.png',
     tools: 'MERN Stack',
-    description: `An eCommerce website that displays a list of products and supports user registration, login, add-to-cart and checkout functionalities. It also supports admin user actions such as adding, editing, deleting and archiving products as well as setting order statuses where users can track as 'pending' or 'completed'. This is my full stack web application project during my coding bootcamp training. It combines my second and third capstone projects.`,
+    description: `An eCommerce website that displays a list of products and supports user registration, login, add-to-cart and checkout functionalities. It also supports admin user actions such as adding, editing, deleting and archiving products as well as setting order statuses where users can track as 'pending' or 'completed'.`,
+    idea: 'iStore (branding)',
     dateCreated: '2021',
     image: './assets/images/projects/capstone-3.jpg',
     gif: './assets/gifs/capstone-3.gif',
@@ -11,8 +25,10 @@ export const projects = [
   },
   {
     title: 'Developer Portfolio V1',
+    logo: '',
     tools: 'HTML, CSS + Bootstrap',
     description: `Personal Developer Portfolio project version 1`,
+    idea: '',
     dateCreated: '2021',
     image: './assets/images/projects/dev-portfolio-v1-2.jpg',
     gif: '',
@@ -21,8 +37,10 @@ export const projects = [
   },
   {
     title: 'Developer Portfolio',
+    logo: '',
     tools: 'HTML, CSS + Bootstrap',
     description: `Build a developer portfolio page for Zuitt Coding Bootcamp - Capstone Project 1`,
+    idea: '',
     dateCreated: '2021',
     image: './assets/images/projects/capstone-1.jpg',
     gif: '',
@@ -32,9 +50,12 @@ export const projects = [
 
   {
     title: 'Michael Collins Tribute Page',
+    logo: '',
     tools: 'HTML + CSS',
     description:
       'Build a tribute page for freeCodeCamp.org - Responsive Web Design Certification',
+    idea: '',
+
     dateCreated: '2021',
     image: './assets/images/projects/fcc-1.jpg',
     gif: '',
@@ -43,9 +64,12 @@ export const projects = [
   },
   {
     title: 'Job Satisfaction Survey Form',
+    logo: '',
     tools: 'HTML + CSS',
     description:
       'Build a survey form for freeCodeCamp.org - Responsive Web Design Certification',
+    idea: '',
+
     dateCreated: '2021',
     image: '../assets/images/projects/fcc-2.jpg',
     gif: '',
@@ -54,9 +78,12 @@ export const projects = [
   },
   {
     title: 'Acer Aspire VX15 Product Landing Page',
+    logo: '',
     tools: 'HTML + CSS',
     description:
       'Build a product landing page for freeCodeCamp.org - Responsive Web Design Certification',
+    idea: '',
+
     dateCreated: '2021',
     image: '../assets/images/projects/fcc-3.jpg',
     gif: '',
@@ -65,9 +92,12 @@ export const projects = [
   },
   {
     title: 'C++ Technical Documentation Page',
+    logo: '',
     tools: 'HTML + CSS',
     description:
       'Build a technical documentation page for freeCodeCamp.org - Responsive Web Design Certification',
+    idea: '',
+
     dateCreated: '2021',
     image: '../assets/images/projects/fcc-4.jpg',
     gif: '',
