@@ -17,11 +17,16 @@ function ProjectInfo({ project }) {
       <h3>{project.title}</h3>
       <p>{project.tools}</p>
       <p className='mt-2 text-lg'>{project.description}</p>
-      <div>
-        <p className='mt-2 text-lg'>
-          Project Idea: <span className='font-bold'>{project.idea}</span>{' '}
-        </p>
-      </div>
+      {project.featured ? (
+        <div>
+          <p className='mt-2 text-lg'>
+            Project Idea: <span className='font-bold'>{project.idea}</span>{' '}
+          </p>
+          <a href={project.repo} target='_blank' className='mt-2 text-gray-400'>
+            Open project repository
+          </a>
+        </div>
+      ) : null}
     </div>
   );
 }

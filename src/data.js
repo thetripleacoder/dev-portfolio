@@ -3,12 +3,13 @@ export const projects = [
     title: 'watodo',
     logo: './assets/images/projects/watodo-logo.png',
     tools: 'MEAN Stack',
-    description: `watodo, which sounds like "What to do", is a to-do list app that lets users add, edit, complete and delete tasks. Tasks can be listed as important or on top of a list and can also be grouped into different categories. It is a full-stack application that supports user registration and login, which enable users to retrieve saved lists. The whole application can be used in dark mode feature.`,
+    description: `watodo, which sounds like "What to do", is a to-do list app that lets users add, edit, complete and delete tasks. Tasks can be listed as important or on top of a list and can also be grouped into different categories. It is a full-stack application that supports user registration and login, which enable users to retrieve saved lists. The whole application can be used in dark mode feature. (Ongoing project).`,
     idea: 'Microsoft To Do',
     dateCreated: '2023',
     image: './assets/images/projects/watodo-tasks-window-2.jpg',
     gif: './assets/gifs/watodo.gif',
     link: 'https://watodo-client.vercel.app/',
+    repo: 'https://github.com/thetripleacoder/watodo',
     featured: true,
   },
   {
@@ -21,6 +22,7 @@ export const projects = [
     image: './assets/images/projects/capstone-3.jpg',
     gif: './assets/gifs/capstone-3.gif',
     link: 'https://mystoreofficial.netlify.app/',
+    repo: 'https://github.com/thetripleacoder/MyStore',
     featured: true,
   },
   {
@@ -33,6 +35,7 @@ export const projects = [
     image: './assets/images/projects/dev-portfolio-v1-2.jpg',
     gif: '',
     link: 'https://thetripleacoder.vercel.app/',
+    repo: 'https://github.com/thetripleacoder/Developer-Portfolio',
     featured: false,
   },
   {
@@ -45,6 +48,7 @@ export const projects = [
     image: './assets/images/projects/capstone-1.jpg',
     gif: '',
     link: 'https://aldousalde.netlify.app/',
+    repo: 'https://github.com/thetripleacoder/csp1',
     featured: false,
   },
 
@@ -60,6 +64,7 @@ export const projects = [
     image: './assets/images/projects/fcc-1.jpg',
     gif: '',
     link: 'https://thetripleacoder.github.io/MichaelCollinstribute/',
+    repo: 'https://github.com/thetripleacoder/MichaelCollinstribute',
     featured: false,
   },
   {
@@ -74,6 +79,7 @@ export const projects = [
     image: '../assets/images/projects/fcc-2.jpg',
     gif: '',
     link: 'https://thetripleacoder.github.io/JobSatisfactionsurvey/',
+    repo: 'https://github.com/thetripleacoder/JobSatisfactionsurvey',
     featured: false,
   },
   {
@@ -88,6 +94,7 @@ export const projects = [
     image: '../assets/images/projects/fcc-3.jpg',
     gif: '',
     link: 'https://thetripleacoder.github.io/acerprodland/',
+    repo: 'https://github.com/thetripleacoder/acerprodland',
     featured: false,
   },
   {
@@ -102,6 +109,7 @@ export const projects = [
     image: '../assets/images/projects/fcc-4.jpg',
     gif: '',
     link: 'https://thetripleacoder.github.io/Cplusplustechdoc/',
+    repo: 'https://github.com/thetripleacoder/Cplusplustechdoc',
     featured: false,
   },
 ];
