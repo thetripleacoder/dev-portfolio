@@ -3,7 +3,7 @@ export const projects = [
     title: 'watodo',
     logo: './assets/images/projects/watodo-logo.png',
     tools: 'MEAN Stack',
-    description: `watodo, which sounds like "What to do", is a to-do list app that lets users add, edit, complete and delete tasks. Tasks can be listed as important or on top of a list and can also be grouped into different categories. It is a full-stack application that supports user registration and login, which enable users to retrieve saved lists. The whole application can be used in dark mode feature. (Ongoing project).`,
+    description: `watodo, which sounds like "What to do", is a to-do list app that lets users add, edit, complete and delete tasks. Tasks can be listed as important or on top of a list and can also be grouped into different categories. It is a full-stack application that supports user registration and login, which enable users to retrieve saved lists and edit user details. The whole application can be used in dark mode feature. (Ongoing project).`,
     idea: 'Microsoft To Do',
     dateCreated: '2023',
     image: './assets/images/projects/watodo-tasks-window-2.jpg',
